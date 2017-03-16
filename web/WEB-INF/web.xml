@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CrearCliente</servlet-name>
+        <servlet-class>Servlets.CrearCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CrearProducto</servlet-name>
+        <servlet-class>Servlets.CrearProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CrearFactura</servlet-name>
+        <servlet-class>Servlets.CrearFactura</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CrearCliente</servlet-name>
+        <url-pattern>/CrearCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearProducto</servlet-name>
+        <url-pattern>/CrearProducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearFactura</servlet-name>
+        <url-pattern>/CrearFactura</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
